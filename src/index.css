@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "BLACK MUSTANG";
+  src: url("./src/assets/BLACK MUSTANG.TTF");
+}
+@font-face {
+  font-family: "LUFGABOLD";
+  src: url("./src/assets/LUFGABOLD.TTF");
+}
+@font-face {
+  font-family: "LUFGAITALIC";
+  src: url("./src/assets/LUFGAITALIC.TTF");
+}
+@font-face {
+  font-family: "LUFGALIGHT";
+  src: url("./src/assets/LUFGALIGHT.TTF");
+}
+@font-face {
+  font-family: "LUFGALIGHTITALIC";
+  src: url("./src/assets/LUFGALIGHTITALIC.TTF");
+}
+@font-face {
+  font-family: "LUFGAMEDIUM";
+  src: url("./src/assets/LUFGAMEDIUM.TTF");
+}
+@font-face {
+  font-family: "LUFGAMEDIUMITALIC";
+  src: url("./src/assets/LUFGAMEDIUMITALIC.TTF");
+}
+@font-face {
+  font-family: "LUFGAREGULAR";
+  src: url("./src/assets/LUFGAREGULAR.TTF");
+}
+@font-face {
+  font-family: "LUFGASEMIBOLD";
+  src: url("./src/assets/LUFGASEMIBOLD.TTF");
+}
+@font-face {
+  font-family: "LUFGATHIN";
+  src: url("./src/assets/LUFGATHIN.TTF");
+}
+
+@font-face {
+  font-family: "LONG_SHOT";
+  src: url("./src/assets/LONG_SHOT.TTF");
+}
+
+.longshot {
+  font-family: "LONG_SHOT";
+}
+.mustang {
+  font-family: "BLACK MUSTANG";
+}
+.lufgabold {
+  font-family: "LUFGABOLD";
+}
+.lufgaitalic {
+  font-family: "LUFGAITALIC";
+}
+.lufgalight {
+  font-family: "LUFGALIGHT";
+}
+.lufgalightitalic {
+  font-family: "LUFGALIGHTITALIC";
+}
+.lufgamedium {
+  font-family: "LUFGAMEDIUM";
+}
+.lufgamediumitalic {
+  font-family: "LUFGAMEDIUMITALIC";
+}
+.lufgaregular {
+  font-family: "LUFGAREGULAR";
+}
+.lufgasemibold {
+  font-family: "LUFGASEMIBOLD";
+}
+.lufgathin {
+  font-family: "LUFGATHIN";
+}
