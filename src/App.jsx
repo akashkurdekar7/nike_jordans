@@ -8,10 +8,12 @@ import yellow from "./assets/images/yellow.png";
 import {BiPlus, BiMinus} from "react-icons/bi";
 import {IoIosArrowForward} from "react-icons/io";
 import SplitText from "gsap/SplitText";
+import Loader from "./components/Loader";
 
 const App = () => {
   const [count, setCount] = useState(1);
   const [current, setCurrent] = useState(0);
+  const [isLoading, setIsLoading] = useState(true);
   const contentRef = useRef(null);
   const imageRef = useRef(null);
   const descriptionRef = useRef(null);
@@ -93,11 +95,19 @@ const handleMinus = () => setCount((prev) => (prev > 1 ? prev - 1 : 1));
   };
 
   useEffect(() => {
+    // Set loading to false when component mounts
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 1500); // 1.5 second loading time
+
     gsap.fromTo(
       imageRef.current,
       {x: 200, opacity: 0, rotate: 20},
       {x: 0, opacity: 1, rotate: 0, duration: 0.8, ease: "power3.out"}
     );
+
+    // Cleanup function to clear the timer if component unmounts
+    return () => clearTimeout(timer);
     gsap.fromTo(
       contentRef.current,
       {y: 50, opacity: 0},
@@ -133,6 +143,10 @@ const handleMinus = () => setCount((prev) => (prev > 1 ? prev - 1 : 1));
   }, [current]);
 
   const jordan = jordans[current];
+
+  if (isLoading) {
+    return <Loader />;
+  }
 
   return (
     <>
